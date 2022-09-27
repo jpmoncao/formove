@@ -13,9 +13,13 @@
 }
 
 header {
+    position: fixed;
     background-color: var(--color2);
     height: 4.5rem;
+    width: 100vw;
     display: flex;
+    
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.35);
 }
 
 header .logo {
@@ -29,7 +33,7 @@ header .logo img {
 }
 
 header .logo h1 {
-    color: var(--bg-white);
+    color: white;
     font: normal bold 1.25em 'DM Sans';
     margin-left: -1.2rem;
     margin-bottom: 0.4rem;
@@ -40,10 +44,15 @@ nav {
     justify-content: center;
 }
 
+main {
+    padding-top: 5rem;
+}
+
+/* MENU MOBILE */
 #menu-mobile {
-    position: absolute;
-    height: 0px;
-    left: 90vw;
+    position: fixed;
+    top: 4.5%;
+    left: 85vw;
 
     background-color: transparent;
     border: none;
@@ -58,13 +67,84 @@ nav {
 
     width: 18px;
     height: 2px;
-    border-radius: 4px;
+    border-radius: 8px;
 
-    margin-top: 5px;
-    background-color: var(--bg-white);
+    margin-top: 4px;
+    background-color: white;
     transition: transform .5s, opacity .25s;
 }
 
+#menu-mobile-container {
+    visibility: hidden;
+    position: fixed;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    top: 4.5rem;
+    width: 100vw;
+    height: 50vh;
+
+    background-color: var(--color3);
+    border-radius: 0px 0px 16px 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+#menu-mobile-container li,
+#menu-mobile-container li a {
+    color: white;
+    font: normal normal 24px 'Poppins';
+}
+
+div#dropdown {
+    display: none;
+    visibility: hidden;
+
+    height: 35vh;
+    width: 55vw;
+    border-radius: 16px;
+
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+div#dropdown::after {
+    content: '';
+
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    border: 0.5rem solid transparent;
+    border-bottom-color: white;
+}
+
+div#dropdown ul {
+    visibility: visible;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
+    background-color: transparent;
+}
+
+div#dropdown ul li {
+    height: 1.1em;
+}
+
+div#dropdown ul li a {
+    color: var(--color4);
+    font: normal normal 0.6em 'Poppins';
+}
+
+
+/* ACTIVE */
 #menu-mobile.active .line:nth-child(1) {
     transform: translateY(7px) rotate(45deg);
 }
@@ -72,9 +152,14 @@ nav {
     opacity: 0;
 }
 #menu-mobile.active .line:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
+    transform: translateY(-5px) rotate(-45deg);
 }
 
-ul {
-    display: none;
+#menu-mobile-container.active {
+    visibility: visible;
+}
+
+#dropdown.active{
+    display: flex;
+    visibility: visible;
 }
