@@ -1,11 +1,18 @@
 const btnMenuMobile = document.getElementById('menu-mobile')
 const menuMobile = document.getElementById('menu-mobile-container')
 const dropdown = document.getElementById('dropdown')
-const dropdownCTA = document.getElementById('dropdown-content')
+const dropdownContent = document.getElementById('dropdown-content')
 
 const menuIsActive = () => {
     btnMenuMobile.classList.toggle('active')
     menuMobile.classList.toggle('active')
+    dropdownVerification()
+}
+
+const dropdownVerification = () => {
+    if(!menuMobile.classList.contains('active') && dropdown.classList.contains('active')) {
+        dropdown.classList.remove('active')
+    }
 }
 
 const dropdownIsActive = () => {
@@ -13,4 +20,4 @@ const dropdownIsActive = () => {
 }
 
 btnMenuMobile.addEventListener('click', menuIsActive)
-dropdownCTA.addEventListener('click', dropdownIsActive)
+dropdownContent.addEventListener('click', dropdownIsActive)
