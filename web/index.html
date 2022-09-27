@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formove | Aplicativo de rotina e hábitos saudáveis</title>
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/header.css">
     <link rel="stylesheet" href="../assets/css/reset.css">
@@ -19,15 +20,15 @@
         </div>
 
         <nav>
-            <button id="menu-mobile" class="">
+            <button id="menu-mobile">
                 <span class="line"></span>
                 <span class="line"></span>
                 <span class="line"></span>
             </button>
-            <ul>
+            <ul id="menu-mobile-container">
                 <li>Home</a></li>
-                <li>Conteúdos</li>
-                <div class="dropdown">
+                <li id="dropdown-content">Conteúdos</li>
+                <div id="dropdown">
                     <ul>
                         <li><a href="web/exercicios.html">Exercícios</a></li>
                         <li><a href="web/alimentacao.html">Alimentação</a></li>
@@ -77,6 +78,8 @@
 
         </section>
     </main>
+
+    <script src="../assets/js/header.js"></script>
 </body>
 
 </html>
