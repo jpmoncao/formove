@@ -95,6 +95,7 @@ main {
 
 #menu-mobile-container li,
 #menu-mobile-container li a {
+    cursor: pointer;
     color: white;
     font: normal normal 24px 'Poppins';
 }
