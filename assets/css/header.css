@@ -107,7 +107,7 @@ div#dropdown {
 
     height: 35vh;
     width: 55vw;
-    border-radius: 16px;
+    border-radius: 32px;
 
     background-color: white;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
@@ -131,6 +131,7 @@ div#dropdown ul li {
 div#dropdown ul li a {
     color: var(--color4);
     font: normal normal 0.6em 'Poppins';
+    letter-spacing: -0.055em;
 }
 
 
@@ -206,6 +207,10 @@ div#dropdown ul li a {
         height: 6rem;
     }
 
+    main {
+        padding-top: 6.5rem;
+    }
+
     #menu-mobile {
         display: none;
     }
@@ -233,5 +238,36 @@ div#dropdown ul li a {
         cursor: pointer;
         color: white;
         font: normal normal 1.2rem 'Poppins';
+    }
+
+    div#dropdown {
+        position: fixed;
+        top: 6rem;
+        left: 65vw;
+
+        height: calc(21.25rem - 6rem);
+        width: 14rem;
+
+        border-radius: 0px 0px 32px 32px;
+    }
+    
+    div#dropdown ul {
+        visibility: visible;
+        display: flex;
+    
+        flex-direction: column;
+        justify-content: center;
+    
+        text-align: center;
+        background-color: transparent;
+    }
+    
+    div#dropdown ul li {
+        height: 2em;
+    }
+    
+    div#dropdown ul li a {
+        color: var(--color4);
+        font: normal normal 1.1em 'Poppins';
     }
 }
