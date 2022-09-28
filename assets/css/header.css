@@ -51,7 +51,7 @@ main {
 /* MENU MOBILE */
 #menu-mobile {
     position: fixed;
-    top: 4.5%;
+    top: 4vh;
     left: 85vw;
 
     background-color: transparent;
@@ -85,8 +85,9 @@ main {
     gap: 8px;
 
     top: 4.5rem;
+    left: 0px;
     width: 100vw;
-    height: 50vh;
+    height: 50%;
 
     background-color: var(--color3);
     border-radius: 0px 0px 16px 16px;
@@ -97,7 +98,7 @@ main {
 #menu-mobile-container li a {
     cursor: pointer;
     color: white;
-    font: normal normal 24px 'Poppins';
+    font: normal normal 20px 'Poppins';
 }
 
 div#dropdown {
@@ -110,18 +111,6 @@ div#dropdown {
 
     background-color: white;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-div#dropdown::after {
-    content: '';
-
-    position: absolute;
-    top: 70px;
-    left: 50%;
-    transform: translateX(-50%);
-
-    border: 0.5rem solid transparent;
-    border-bottom-color: white;
 }
 
 div#dropdown ul {
@@ -162,5 +151,87 @@ div#dropdown ul li a {
 
 #dropdown.active{
     display: flex;
+    justify-content: center;
     visibility: visible;
+}
+
+
+/* Responsivity */
+
+/* Cleulares médios */
+@media screen and (min-width: 460px) {
+    #menu-mobile-container li,
+    #menu-mobile-container li a {
+        font: normal normal 26px 'Poppins';
+    }
+}
+
+/* Celulares grandes */
+@media screen and ( min-height: 750px ) and (min-width: 460px) {
+    #menu-mobile {
+        top: 2.5vh;
+    }
+
+    div#dropdown ul li {
+        height: 1.75em;
+    }
+    div#dropdown ul li a {
+        margin-top: 2rem;
+        font: normal normal 1em 'Poppins';
+    }
+
+    #menu-mobile-container li,
+    #menu-mobile-container li a {
+        font: normal normal 18px 'Poppins';
+    }
+}
+
+@media screen and ( min-height: 750px ) and (orientation: portrait) {
+    #menu-mobile {
+        top: 2.5vh;
+    }
+
+    div#dropdown ul li {
+        height: 1.75em;
+    }
+    div#dropdown ul li a {
+        margin-top: 2rem;
+        font: normal normal 1em 'Poppins';
+    }
+}
+
+/* Computadores pequenos */
+@media screen and (min-width: 840px) {
+    header {
+        height: 6rem;
+    }
+
+    #menu-mobile {
+        display: none;
+    }
+
+    #menu-mobile-container {
+        visibility: visible;
+        position: relative;
+        top: 0px;
+        height: 4rem;
+        width: 80vw;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        align-items: flex-end;
+        column-gap: 2rem;
+    
+        background-color: transparent;
+        
+        box-shadow: none;
+    }
+    
+    #menu-mobile-container li,
+    #menu-mobile-container li a {
+        cursor: pointer;
+        color: white;
+        font: normal normal 1.2rem 'Poppins';
+    }
 }
