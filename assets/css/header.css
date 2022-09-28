@@ -12,6 +12,7 @@
     --bg-white: #E7F0DE;
 }
 
+/* Header base */
 header {
     position: fixed;
     background-color: var(--color2);
@@ -48,7 +49,7 @@ main {
     padding-top: 5rem;
 }
 
-/* MENU MOBILE */
+/* Menu mobile */
 #menu-mobile {
     position: fixed;
     top: 4vh;
@@ -135,7 +136,7 @@ div#dropdown ul li a {
 }
 
 
-/* ACTIVE */
+/* Active classes */
 #menu-mobile.active .line:nth-child(1) {
     transform: translateY(7px) rotate(45deg);
 }
