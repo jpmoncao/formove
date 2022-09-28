@@ -7,7 +7,7 @@
     <title>Formove | Aplicativo de rotina e hábitos saudáveis</title>
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 
-    
+
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/header.css">
     <link rel="stylesheet" href="../assets/css/index.css">
@@ -45,16 +45,40 @@
         </nav>
     </header>
     <main>
-        <section class="slider">
-            <div class="slider-container"></div>
-            <div class="slider-content"></div>
-            <div class="slider-text">
-                <h2>Olá, seja bem vindo ao ForMove!</h2>
-                <p>Esse é o seu aplicativo de hábitos e rotinas saudáveis, ele será seu companheiro na jornada em busca
-                    de uma vida melhor e mais prazerosa ao longo tempo. Descubra todas funções do nosso site no menu ou
-                    rolando para baixo, divirta-se!</p>
+        <div class="slideshow-container fade">
+
+            <!-- Full images with numbers and message Info -->
+            <div class="Containers">
+                <div class="MessageInfo">1 / 3</div>
+                <img src="../assets/img/slider/image1.png">
+                <div class="Info">First caption</div>
             </div>
-        </section>
+
+            <div class="Containers">
+                <div class="MessageInfo">2 / 3</div>
+                <img src="../assets/img/slider/image2.png">
+                <div class="Info">Second Caption</div>
+            </div>
+
+            <div class="Containers">
+                <div class="MessageInfo">3 / 3</div>
+                <img src="../assets/img/slider/image3.png">
+                <div class="Info">Third Caption</div>
+            </div>
+
+            <!-- Back and forward buttons -->
+            <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The circles/dots -->
+        <div style="text-align:center">
+            <span class="dots" onclick="currentSlide(1)"></span>
+            <span class="dots" onclick="currentSlide(2)"></span>
+            <span class="dots" onclick="currentSlide(3)"></span>
+        </div>
+        <script src="../assets/js/slider.js"></script>
 
         <section class="content">
             <section class="content-exercicios right">
