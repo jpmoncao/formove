@@ -62,23 +62,25 @@ body {
 .content {
     display: flex;
     flex-wrap: wrap;
-    width: 100vw;
+    width: 90vw;
+    margin: 0% auto;
 }
 
 .content section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    padding: 0px auto;
+    padding: 0px .3rem;
+    overflow: scroll;
+    margin-top: 0.5rem;
 }
 
 .content img {
-    width: 14rem;
+    width: 12rem;
 }
 
 .content h2 {
-    font: normal 700 2em 'DM Sans';
+    font: normal 700 1.5em 'DM Sans';
     text-transform: uppercase;
     letter-spacing: -0.065em;
     color: #00251B;
@@ -86,28 +88,38 @@ body {
 }
 
 .content p {
-    font: normal normal 1em 'DM Sans';
+    font: normal normal 0.8em 'DM Sans';
     line-height: 1em;
     color: #055941;
     text-shadow: 0px 2px 2px rgba(5, 89, 65, 0.25);
-    text-indent: 2.5em;
 }
 
 .content button {
-    background: #0B8C68;
-    border: 1px solid #055941;
+    background: var(--color3);
+    border: 1px solid var(--color2);
     box-shadow: 0px 4px 4px rgba(13, 34, 38, 0.2);
     border-radius: 32px;
     width: 9rem;
     height: 2rem;
     margin-top: 8px;
+    cursor: pointer;
+    transition: .3s
+}
+
+.content button:hover {
+    background: var(--color4);
+    border: 1px solid var(--color2);
+    transform: translateY(-2px);
+    transition: .3s;
+}
+
+.content button:hover>a{
+    color: var(--bg-white);
+    text-decoration: none;
 }
 
 .content button a {
-    font: normal 700 2em 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.2em;
+    font: normal 700 1.2em 'Montserrat';
     text-transform: uppercase;
     color: #FFFFFF;
 }
