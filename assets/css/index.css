@@ -66,7 +66,7 @@ body {
     margin: 0% auto;
 }
 
-.content section{
+.content section {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -113,7 +113,7 @@ body {
     transition: .3s;
 }
 
-.content button:hover>a{
+.content button:hover>a {
     color: var(--bg-white);
     text-decoration: none;
 }
@@ -124,11 +124,113 @@ body {
     color: #FFFFFF;
 }
 
-.content section.left{
+.content section.left {
     text-align: left;
     flex-direction: row-reverse;
 }
 
-.content section.right{
+.content section.right {
     text-align: right;
+}
+
+/* RESPONSIVITY */
+@media screen and (min-height: 750px) and (min-width: 460px) {
+    .content {
+        width: 75vw;
+    }
+
+    .content img {
+        width: 15rem;
+    }
+
+    .content h2 {
+        font: normal 700 2em 'DM Sans';
+    }
+
+    .content p {
+        font: normal normal 1em 'DM Sans';
+    }
+
+    .content button {
+        width: 10rem;
+        height: 2.5rem;
+    }
+
+    .content button a {
+        font: normal 700 1.3em 'Montserrat';
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .content {
+        width: 90vw;
+    }
+
+    .content section {
+        width: 50%;
+        padding: 0px 4rem;
+    }
+
+    .content img {
+        width: 15rem;
+    }
+
+    .content section.left {
+        flex-direction: row;
+        text-align: right;
+    }
+
+    .content h2 {
+        font: normal 700 1.75em 'DM Sans';
+    }
+
+    .content p {
+        font: normal normal 1em 'DM Sans';
+    }
+
+    .content button {
+        width: 8rem;
+        height: 2rem;
+    }
+
+    .content button a {
+        font: normal 700 1.1em 'Montserrat';
+    }
+}
+
+@media screen and (min-width: 1620px) {
+    .content {
+        width: 90vw;
+    }
+
+    .content section {
+        width: 50%;
+        padding: 0px 4rem;
+    }
+
+    .content img {
+        width: 20rem;
+    }
+
+    .content section.left {
+        flex-direction: row;
+        text-align: right;
+    }
+
+    .content h2 {
+        font: normal 700 2.2em 'DM Sans';
+    }
+
+    .content p {
+        font: normal normal 1.5em 'DM Sans';
+    }
+
+    .content button {
+        width: 10rem;
+        height: 2.5rem;
+    }
+
+    .content button a {
+        font: normal 700 1.3em 'Montserrat';
+    }
 }
