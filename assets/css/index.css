@@ -12,6 +12,7 @@
     --bg-white: #E7F0DE;
 }
 
+
 body {
     background-color: var(--bg-white);
 }
@@ -157,7 +158,7 @@ footer .contato h4 {
     font: normal normal 1em'DM Sans', sans-serif;
     letter-spacing: 0.01em;
     text-align: start;
-}   
+}
 
 
 footer .contato .contato-icons {
@@ -177,7 +178,7 @@ footer .contato .contato-icons a:hover {
 }
 
 
-footer .contato-form{
+footer .contato-form {
     display: flex;
     flex-direction: column;
     gap: .5rem;
@@ -217,7 +218,7 @@ footer .contato-form #mensagem {
 }
 
 footer .contato-form #mensagem::placeholder,
-footer .contato-form input::placeholder{
+footer .contato-form input::placeholder {
     color: white;
     font: normal bold 1em 'DM Sans', sans-serif;
     vertical-align: top;
@@ -282,11 +283,11 @@ footer h5 {
     padding-bottom: 0.5rem;
 }
 
-footer h5 > a {
+footer h5>a {
     color: var(--color3);
 }
 
-footer h5 > a:hover {
+footer h5>a:hover {
     color: var(--color5);
 }
 
@@ -340,25 +341,58 @@ footer h5 > a:hover {
     }
 }
 
+@media screen and (min-width: 460px) {
+    .carousel-item h3 {
+        font-size: 2em;
+    }
+
+    .carousel-item p {
+        font-size: 1em;
+        line-height: 1.5rem;
+    }
+
+    .content {
+        width: 75vw;
+    }
+
+    .content img {
+        width: 15rem;
+    }
+
     .content h2 {
-        font: normal 700 2em 'DM Sans', sans-serif;
+        font: normal 700 1.75em 'DM Sans', sans-serif;
     }
 
     .content p {
-        font: normal normal 1em 'DM Sans', sans-serif;
+        font: normal normal 0.8em 'DM Sans', sans-serif;
     }
 
     .content button {
-        width: 10rem;
+        width: 9rem;
         height: 2.5rem;
     }
 
     .content button a {
-        font: normal 700 1.3em 'Montserrat', sans-serif;
+        font: normal 700 1.5em 'Montserrat', sans-serif;
     }
 
     footer div.footer-main {
         flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .content {
+        width: 80vw;
+    }
+
+    .content h2 {
+        font: normal 700 1.8em 'DM Sans';
+    }
+
+    .content p {
+        font: normal normal 1.25em 'DM Sans';
     }
 }
 
@@ -369,7 +403,7 @@ footer h5 > a:hover {
 
     .content section {
         width: 50%;
-        padding: 0px 4rem;
+        padding: 0px 1rem;
     }
 
     .content img {
@@ -382,7 +416,7 @@ footer h5 > a:hover {
     }
 
     .content h2 {
-        font: normal 700 1.75em 'DM Sans';
+        font: normal 700 1.5em 'DM Sans';
     }
 
     .content p {
@@ -399,11 +433,21 @@ footer h5 > a:hover {
     }
 
     footer div.footer-main {
-        flex-direction: column;
+        flex-direction: row;
     }
 }
 
-@media screen and (min-width: 1620px) {
+@media screen and (min-width: 1440px) {
+    .carousel-item h3 {
+        margin-top: 5vh;
+        font-size: 3em;
+    }
+
+    .carousel-item p {
+        font-size: 2.5em;
+        line-height: 2.5rem;
+    }
+
     .content {
         width: 90vw;
     }
@@ -440,6 +484,6 @@ footer h5 > a:hover {
     }
 
     footer div.footer-main {
-        flex-direction: column;
+        flex-direction: row;
     }
 }
