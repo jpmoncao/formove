@@ -8,7 +8,7 @@
     --color2: #055941;
     --color3: #0B8C68;
     --color4: #2DA657;
-    --color5: #91CF59;
+    --color5: #91cf59;
     --bg-white: #E7F0DE;
 }
 
@@ -71,7 +71,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0px .3rem;
-    overflow: scroll;
     margin-top: 0.5rem;
 }
 
@@ -118,8 +117,8 @@ body {
     text-decoration: none;
 }
 
-.content button a {
-    font: normal 700 1.2em 'Montserrat';
+.content .content-cta-btn a {
+    font: normal 700 1em 'Poppins', sans-serif;
     text-transform: uppercase;
     color: #FFFFFF;
 }
@@ -133,6 +132,176 @@ body {
     text-align: right;
 }
 
+/* FOOTER/CONTATO */
+footer {
+    margin-top: 15vh;
+    background-color: var(--color2);
+    width: 100%;
+}
+
+footer .footer-main {
+    padding: 3rem;
+}
+
+footer .contato h3 {
+    color: var(--color5);
+    font: normal bold 2em'DM Sans', sans-serif;
+    letter-spacing: 0.01em;
+    text-align: start;
+}
+
+footer .contato h4 {
+    color: white;
+    font: normal normal 1em'DM Sans', sans-serif;
+    letter-spacing: 0.01em;
+    text-align: start;
+}   
+
+
+footer .contato .contato-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    filter: invert(1);
+    transition-duration: .3s;
+}
+
+footer .contato .contato-icons a:hover {
+    filter: drop-shadow(0px 3px 12px #cf59c5);
+    transform: scale(104%);
+    transform: translateY(6px);
+    transition-duration: .3s;
+}
+
+
+footer .contato-form{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+footer .contato-form input {
+    width: 20rem;
+    height: 2.75rem;
+
+    background-color: #848484;
+    border-radius: 16px;
+    border: none;
+
+    color: white;
+    font: normal bold 0.75em 'DM Sans', sans-serif;
+    vertical-align: top;
+    text-indent: 1.2rem;
+
+    transition: .3s;
+}
+
+footer .contato-form #mensagem {
+    width: 20rem;
+    height: 5.5rem;
+    padding: 1rem 1rem;
+
+    background-color: #848484;
+    border-radius: 16px;
+    border: none;
+
+    color: white;
+    font: normal bold 0.75em 'DM Sans', sans-serif;
+    vertical-align: top;
+
+    transition: .3s;
+    resize: none;
+}
+
+footer .contato-form #mensagem::placeholder{
+    color: white;
+    font: normal bold 0.75em 'DM Sans', sans-serif;
+    vertical-align: top;
+}
+
+footer .contato-form input::placeholder{
+    color: white;
+    font: normal bold 1em 'DM Sans', sans-serif;
+    vertical-align: top;
+    text-indent: 1.2rem;
+}
+
+footer .contato-form #mensagem:focus {
+    transform: scale(103%);
+    background-color: white;
+    color: var(--color1);
+    outline: none;
+    transition: .3s;
+}
+
+footer .contato-form input:focus {
+    transform: scale(103%);
+    background-color: white;
+    color: var(--color1);
+    outline: none;
+    transition: .3s;
+}
+
+
+footer .contato-form button {
+    width: 11rem;
+    height: 2.5rem;
+    align-self: flex-end;
+
+    background: var(--color5);
+    border-radius: 32px;
+
+    color: #fff;
+    font: normal bold 1.5em 'DM Sans', sans-serif;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+
+    border: none;
+    transition: .5s;
+}
+
+
+footer .contato-form button img {
+    filter: invert(1);
+    vertical-align: middle;
+}
+
+footer .contato-form button:hover {
+    background-color: white;
+    color: #000;
+    filter: drop-shadow(0px 4px 16px rgba(45, 166, 87, 0.4));
+
+    transform: translateY(5px);
+}
+
+footer .contato-form button:active {
+    transform: translateY(-10px);
+}
+
+footer .contato-form button:hover img {
+    filter: invert(0);
+}
+
+footer h5 {
+    color: white;
+    font: normal normal 0.8em 'Poppins', sans-serif;
+    text-align: center;
+
+    padding-top: 5rem;
+    padding-bottom: 0.5rem;
+}
+
+footer h5 > a {
+    color: var(--color3);
+}
+
+footer h5 > a:hover {
+    color: var(--color1);
+}
+
 /* RESPONSIVITY */
 @media screen and (min-height: 750px) and (min-width: 460px) {
     .content {
@@ -144,11 +313,11 @@ body {
     }
 
     .content h2 {
-        font: normal 700 2em 'DM Sans';
+        font: normal 700 2em 'DM Sans', sans-serif;
     }
 
     .content p {
-        font: normal normal 1em 'DM Sans';
+        font: normal normal 1em 'DM Sans', sans-serif;
     }
 
     .content button {
@@ -157,7 +326,16 @@ body {
     }
 
     .content button a {
-        font: normal 700 1.3em 'Montserrat';
+        font: normal 700 1.3em 'Montserrat', sans-serif;
+    }
+
+    footer .footer-main {
+        flex-direction: column;
+        margin-left: 0px;
+    }
+
+    footer .contato {
+        margin-left: 0px;
     }
 }
 
@@ -196,6 +374,10 @@ body {
     .content button a {
         font: normal 700 1.1em 'Montserrat';
     }
+
+    footer .footer-main {
+        display: block;
+    }
 }
 
 @media screen and (min-width: 1620px) {
@@ -232,5 +414,9 @@ body {
 
     .content button a {
         font: normal 700 1.3em 'Montserrat';
+    }
+
+    footer .footer-main {
+        flex-direction: column;
     }
 }

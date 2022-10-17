@@ -54,7 +54,7 @@
                     </ul>
                 </div>
                 <li><a href="web/about.html">Sobre</a></li>
-                <li><a href="">Contatos</a></li>
+                <li><a href="#contato">Contatos</a></li>
             </ul>
         </nav>
     </header>
@@ -173,7 +173,7 @@
                 <div class="content-text">
                     <h2>Saúde sexual</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus cumque maxime tenetur
-                        amet
+                        amet    
                         laboriosam quas, delectus quibusdam?</p>
                     <button class="content-cta-btn">
                         <a href="web/saudesexual.html">Comece já</a>
@@ -184,6 +184,38 @@
 
 
     </main>
+
+    <footer id="contato">
+        <div class="footer-main">
+            <section class="contato">
+                <h3>Contate-me em:</h3>
+                <h4>Vamos nos conectar? Nos contate em</h4>
+                <section class="contato-icons">
+                    <a href="https://github.com/formove" target="_blank">
+                        <img src="../assets/img/icons/github-icon.svg" alt="Icone Github">
+                    </a>
+                    <a href="https://mailto:contato.formove@outlook.com" target="_blank">
+                        <img src="../assets/img/icons/email-icon.svg" alt="Icone Email">
+                    </a>
+                    <a href="https://www.instagram.com/formove/" target="_blank">
+                        <img src="../assets/img/icons/instagram-icon.svg" alt="Icone Instagram">
+                    </a>
+                </section>
+            </section>
+            <form class="contato-form" method="post">
+                <input autocomplete="off" type="text" name="nome" id="nome" placeholder="Seu nome: " required>
+                <input autocomplete="off" type="email" name="email" id="email" placeholder="Seu email: " required>
+                <textarea name="mensagem" id="mensagem" cols="25" rows="10" placeholder="Sua mensagem: "
+                    required></textarea>
+                <button>
+                    <img src="../assets/img/icons/paper-plane-icon.svg">
+                    enviar
+                </button>
+            </form>
+        </div>
+
+        <h5>Desenvolvido por <a href="https://github.com/formove" target="_blank">ForMove©</a>, 2022</h5>
+    </footer>
 
     <script src="../assets/js/header.js"></script>
 </body>
