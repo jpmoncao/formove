@@ -139,8 +139,10 @@ footer {
     width: 100%;
 }
 
-footer .footer-main {
+footer div.footer-main {
     padding: 3rem;
+    display: flex;
+    justify-content: space-around;
 }
 
 footer .contato h3 {
@@ -214,12 +216,7 @@ footer .contato-form #mensagem {
     resize: none;
 }
 
-footer .contato-form #mensagem::placeholder{
-    color: white;
-    font: normal bold 0.75em 'DM Sans', sans-serif;
-    vertical-align: top;
-}
-
+footer .contato-form #mensagem::placeholder,
 footer .contato-form input::placeholder{
     color: white;
     font: normal bold 1em 'DM Sans', sans-serif;
@@ -227,14 +224,7 @@ footer .contato-form input::placeholder{
     text-indent: 1.2rem;
 }
 
-footer .contato-form #mensagem:focus {
-    transform: scale(103%);
-    background-color: white;
-    color: var(--color1);
-    outline: none;
-    transition: .3s;
-}
-
+footer .contato-form #mensagem:focus,
 footer .contato-form input:focus {
     transform: scale(103%);
     background-color: white;
@@ -289,8 +279,6 @@ footer h5 {
     color: white;
     font: normal normal 0.8em 'Poppins', sans-serif;
     text-align: center;
-
-    padding-top: 5rem;
     padding-bottom: 0.5rem;
 }
 
@@ -299,7 +287,7 @@ footer h5 > a {
 }
 
 footer h5 > a:hover {
-    color: var(--color1);
+    color: var(--color5);
 }
 
 /* RESPONSIVITY */
@@ -329,13 +317,8 @@ footer h5 > a:hover {
         font: normal 700 1.3em 'Montserrat', sans-serif;
     }
 
-    footer .footer-main {
+    footer div.footer-main {
         flex-direction: column;
-        margin-left: 0px;
-    }
-
-    footer .contato {
-        margin-left: 0px;
     }
 }
 
@@ -375,8 +358,8 @@ footer h5 > a:hover {
         font: normal 700 1.1em 'Montserrat';
     }
 
-    footer .footer-main {
-        display: block;
+    footer div.footer-main {
+        flex-direction: column;
     }
 }
 
@@ -416,7 +399,7 @@ footer h5 > a:hover {
         font: normal 700 1.3em 'Montserrat';
     }
 
-    footer .footer-main {
+    footer div.footer-main {
         flex-direction: column;
     }
 }
