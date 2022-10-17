@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formove | Aplicativo de rotina e hábitos saudáveis</title>
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
@@ -173,7 +179,7 @@
                 <div class="content-text">
                     <h2>Saúde sexual</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus cumque maxime tenetur
-                        amet    
+                        amet
                         laboriosam quas, delectus quibusdam?</p>
                     <button class="content-cta-btn">
                         <a href="web/saudesexual.html">Comece já</a>
@@ -202,10 +208,10 @@
                     </a>
                 </section>
             </section>
-            <form class="contato-form" method="post">
-                <input autocomplete="off" type="text" name="nome" id="nome" placeholder="Seu nome: " required>
+            <form class="contato-form" method="post" action="../src/contact.php">
+                <input autocomplete="off" type="text" name="name" id="name" placeholder="Seu nome: ">
                 <input autocomplete="off" type="email" name="email" id="email" placeholder="Seu email: " required>
-                <textarea name="mensagem" id="mensagem" cols="25" rows="10" placeholder="Sua mensagem: "
+                <textarea name="message" id="mensagem" cols="25" rows="10" placeholder="Sua mensagem: "
                     required></textarea>
                 <button>
                     <img src="../assets/img/icons/paper-plane-icon.svg">
