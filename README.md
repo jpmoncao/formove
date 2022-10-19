@@ -70,4 +70,4 @@ Para suporte, mande um email para formove.contato@outlook.com
 
 ##
 
-<p align="center">🚧Projeto finalizado - aberto a melhoras🚧</p>
+<p align="center">🚧Projeto em andamento🚧</p>
