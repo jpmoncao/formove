@@ -47,8 +47,10 @@ JavaScript
 
 
 ## 🚹 Sobre nós
-Eu sou João Pedro Monção, tenho 15 anos e atualmente estou cursando técnico em Informática. Estou estudando Front-end! Espero que curta o projeto deste repositório e aproveite para conferir meu perfil...
-
+Nós, desenvolvedores do website informativo ForMove, somos um grupo de estudantes da Escola Técnica Professor Armando José Farinazzo de Fernandópolis, São Paulo.
+O website foi idealizado, pela necessidade da criação de um projeto de iniciação científica que abordasse o tema da saúde. Decidimos então, colocamos essa ideia antiga, projetada no final de 2021, em execução.
+Agradecemos o apoio e o suporte dos professores orientadores: Joel Baptista, Flavia Cotrim e Geici Mara.
+Os alunos envolvidos nesse projeto, tanto na parte de pesquisa e desenvolvimento, é o resultado de um trabalho em equipe, uma grande equipe com dez integrantes, eles são: João Pedro Monção, Ariel Aio, Davi Ribeiro, Arthur Rodovalho, Mariana Molina, Amanda Pupim, Jhenifer Laila, Cinthia Zague, Gabriel Aguera e Higor Donda.
 
 ## 🔗 Links
 [![email](https://img.shields.io/badge/email-056e3b?style=for-the-badge&logo=ko-fi&logoColor=white)](mailto:formove.contato@outlook.com)
