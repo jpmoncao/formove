@@ -134,3 +134,12 @@ article ul li {
 article ul li:hover {
     transform: scale(105%);
 }
+
+.main-header a {
+    color: var(--color2);
+    text-decoration: underline;
+}
+
+.main-header a:hover {
+    color: var(--color5);
+}
