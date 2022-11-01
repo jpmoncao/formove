@@ -118,15 +118,19 @@ footer h3 {
     color: #FFFFFF;
 }
 
-ul {
+article ul {
     margin-left: 3em;
 }
 
-li {
+article ul li {
     list-style: circle;
     list-style-type: disc;
     color: var(--color1);
     line-height: 2em;
     margin-top: .5em;
     font: normal 200 0.85em 'DM Sans', sans-serif;
+}
+
+article ul li:hover {
+    transform: scale(105%);
 }
