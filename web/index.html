@@ -205,12 +205,12 @@
                     </a>
                 </section>
             </section>
-            <form class="contato-form" method="post" action="../src/contact.php">
-                <input autocomplete="off" type="text" name="name" id="name" placeholder="Seu nome: ">
-                <input autocomplete="off" type="email" name="email" id="email" placeholder="Seu email: " required>
-                <textarea name="message" id="mensagem" cols="25" rows="10" placeholder="Sua mensagem: "
+            <form class="contato-form" method="POST" action="mailto:contato.formove@outlook.com" enctype="text/plain">
+                <input autocomplete="off" type="text" name="Nome: " id="name" placeholder="Seu nome: ">
+                <input autocomplete="off" type="email" name="Email: " id="email" placeholder="Seu email: " required>
+                <textarea name="Mensagem: " id="mensagem" cols="25" rows="10" placeholder="Sua mensagem: "
                     required></textarea>
-                <button>
+                <button type="submit" value="Enviar">
                     <img src="../assets/img/icons/paper-plane-icon.svg">
                     enviar
                 </button>
