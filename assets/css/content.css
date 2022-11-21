@@ -41,8 +41,9 @@ main .main-header {
     margin-bottom: 32px;
 }
 
-main .main-header a {
-    margin-top: -32px;
+main .main-header > a {
+    position: absolute;
+    left: 80vw;
 }
 
 main .main-header h1 {
@@ -142,4 +143,105 @@ article ul li:hover {
 
 .main-header a:hover {
     color: var(--color5);
+}
+
+/* RESPONSIVITY */
+@media screen and (max-width: 320px) {
+    main .main-header aside > p{
+        font: 300 normal 0.6em 'DM Sans', sans-serif;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    main .main-header > a > svg {
+        width: 50px;
+        height: 50px;
+    }
+
+    main figure img {
+        max-height: 500px;
+        width: 80%;
+    }
+    
+    main figure figcaption {
+        font: 300 normal 0.75em 'DM Sans', sans-serif;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    main {
+        max-width: 80%;
+        padding: 64px 72px;
+        margin-bottom: 120px;
+    }
+
+    main .main-header h1 {
+        font: bold normal 3em 'DM Sans', sans-serif;
+    }
+
+    main .main-header aside > p{
+        font: 300 normal 0.85em 'DM Sans', sans-serif;
+    }
+
+    main article h2 {
+        font: bold normal 1.6em 'DM Sans', sans-serif;
+    }
+    
+    main article p {
+        font: normal normal 1em 'DM Sans', sans-serif;
+    }
+
+    article ul li {
+        font: normal 200 0.95em 'DM Sans', sans-serif;
+    }
+
+    main figure img {
+        max-height: 600px;
+        width: 80%;
+    }
+    
+    main figure figcaption {
+        font: 300 normal 0.9em 'DM Sans', sans-serif;
+    }
+}
+
+@media screen and (min-width: 1620px) {
+    main {
+        max-width: 75%;
+        padding: 64px 72px;
+        margin-bottom: 120px;
+    }
+
+    main .main-header h1 {
+        font: bold normal 4em 'DM Sans', sans-serif;
+    }
+
+    main .main-header aside > p{
+        font: 300 normal 1.2em 'DM Sans', sans-serif;
+    }
+
+    main .main-header > a > svg {
+        width: 75px;
+        height: 75px;
+    }
+
+    main article h2 {
+        font: bold normal 2em 'DM Sans', sans-serif;
+    }
+    
+    main article p {
+        font: normal normal 1.5em 'DM Sans', sans-serif;
+    }
+
+    article ul li {
+        font: normal 200 1.45em 'DM Sans', sans-serif;
+    }
+    
+    main figure img {
+        height: 120%;
+    }
+    
+    main figure figcaption {
+        font: 300 normal 1.1em 'DM Sans', sans-serif;
+    }
 }
