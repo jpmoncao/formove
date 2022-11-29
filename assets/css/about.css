@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+
+:root {
+    --color1: #0D2226;
+    --color2: #055941;
+    --color3: #0B8C68;
+    --color4: #2DA657;
+    --color5: #91cf59;
+    --bg-white: #E7F0DE;
+}
+
+
+body {
+    background-color: var(--bg-white);
+    width: 100vw;
+}
+
+header {
+    top: 0px;
+    left: 0px;
+}
+
+main {
+    background-color: var(--color2);
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.35);
+    border-radius: 16px;
+
+    max-width: 1280vw;
+    width: 80%;
+    margin: 0px auto;
+    
+    margin-top: 9rem;
+    padding: 64px 25px;
+}
+
+main section {
+    margin-bottom: 32px;
+}
+
+main section p {
+    font: normal normal 1em 'DM Sans', sans-serif;
+    color: white;
+    text-align: justify;
+    text-indent: 2.5em;
+    line-height: 1em;
+
+    text-shadow: 0px 2px 2px rgba(5, 89, 65, 0.25);
+}
+
+main section a {
+    color: var(--color5);
+    text-decoration: underline;
+}
+
+main figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 16px 0px;
+}
+
+main figure img {
+    max-width: 400px;
+    width: 90%;
+}
+
+footer {
+    margin-top: 48px;
+    max-height: 32px;
+    height: 80%;
+
+    background-color: var(--color2);
+}
+
+footer h3 {
+    font: normal normal 0.8em 'DM Sans', sans-serif;
+    text-align: center;
+    color: #FFFFFF;
+}
+ 
