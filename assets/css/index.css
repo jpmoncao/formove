@@ -291,6 +291,42 @@ footer h5>a:hover {
     color: var(--color5);
 }
 
+/* FORBOT BUTTON */
+.forbot-redirect {
+    position: fixed;
+    left: 95vw;
+    top: 50vh;
+
+    max-width: 4rem;
+    max-height: 4rem;
+}
+
+.forbot-redirect button {
+    background-color: var(--color5);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 25px;
+
+    outline: 2px solid black;
+    border: none;
+    transition: .3s;
+}
+
+.forbot-redirect button a {
+    width: 100%;
+}
+
+.forbot-redirect button:hover{
+    background-color: var(--color4);
+    transform: translateY(-10px);
+}
+
+.forbot-redirect img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
 /* RESPONSIVITY */
 @media screen and (max-width: 320px) {
     .carousel-item h3 {
