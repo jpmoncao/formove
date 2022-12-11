@@ -59,6 +59,10 @@ body {
     text-shadow: 0px 2px 4px rgba(13, 34, 38, 0.75);
 }
 
+.carousel-caption {
+    top: 6rem;
+}
+
 /* MAIN CONTENT */
 .content {
     display: flex;
@@ -291,42 +295,6 @@ footer h5>a:hover {
     color: var(--color5);
 }
 
-/* FORBOT BUTTON */
-.forbot-redirect {
-    position: fixed;
-    left: 95vw;
-    top: 50vh;
-
-    max-width: 4rem;
-    max-height: 4rem;
-}
-
-.forbot-redirect button {
-    background-color: var(--color5);
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 25px;
-
-    outline: 2px solid black;
-    border: none;
-    transition: .3s;
-}
-
-.forbot-redirect button a {
-    width: 100%;
-}
-
-.forbot-redirect button:hover{
-    background-color: var(--color4);
-    transform: translateY(-10px);
-}
-
-.forbot-redirect img {
-    width: 2.5rem;
-    height: 2.5rem;
-}
-
 /* RESPONSIVITY */
 @media screen and (max-width: 320px) {
     .carousel-item h3 {
@@ -377,7 +345,7 @@ footer h5>a:hover {
     }
 }
 
-@media screen and (min-width: 460px) {
+@media screen and (min-width: 330px) {
     .carousel-item h3 {
         font-size: 2em;
     }
@@ -385,6 +353,10 @@ footer h5>a:hover {
     .carousel-item p {
         font-size: 1em;
         line-height: 1.5rem;
+    }
+
+    .carousel-caption {
+        top: 4rem;
     }
 
     .content {
@@ -419,6 +391,10 @@ footer h5>a:hover {
 }
 
 @media screen and (min-width: 767px) {
+    .carousel-caption {
+        top: 12rem;
+    }
+
     .content {
         width: 80vw;
     }
@@ -432,7 +408,19 @@ footer h5>a:hover {
     }
 }
 
+@media screen and (min-width: 820px) {
+    .carousel-caption {
+        top: 6rem;
+    }
+}
+
 @media screen and (min-width: 1020px) {
+    .carousel-caption {
+        top: 8rem;
+        width: 50%;
+        margin: 0px auto;
+    }
+
     .content {
         width: 90vw;
     }
@@ -482,6 +470,12 @@ footer h5>a:hover {
     .carousel-item p {
         font-size: 2.5em;
         line-height: 2.5rem;
+    }
+
+    .carousel-caption {
+        top: 4rem;
+        width: 50%;
+        margin: 0px auto;
     }
 
     .content {

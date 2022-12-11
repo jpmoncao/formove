@@ -52,3 +52,111 @@ body {
 html {
 	scroll-behavior: smooth;
 }
+
+/* FORBOT BUTTON */
+.forbot-redirect {
+    position: fixed;
+    left: 95vw;
+    top: 50vh;
+
+    max-width: 5rem;
+    max-height: 5rem;
+}
+
+.forbot-redirect button {
+    background-color: var(--color5);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 25px;
+
+    outline: 2px solid black;
+    border: none;
+    transition: .3s;
+}
+
+.forbot-redirect button a {
+    width: 100%;
+}
+
+.forbot-redirect button:hover{
+    background-color: var(--color4);
+    transform: translateY(-10px);
+}
+
+.forbot-redirect img {
+    width: 3rem;
+    height: 3rem;
+}
+
+@media screen and (max-width: 320px) {
+    .forbot-redirect {
+        left: 83vw;
+        max-width: 3rem;
+        max-height: 3rem;
+    }
+
+    .forbot-redirect button {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .forbot-redirect img {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+@media screen and (min-width: 330px) {
+    .forbot-redirect {
+        left: 85vw;
+        max-width: 3rem;
+        max-height: 3rem;
+    }
+
+    .forbot-redirect button {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .forbot-redirect img {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+@media screen and (min-width: 460px) {
+    .forbot-redirect {
+        left: 76vw;
+        max-width: 3rem;
+        max-height: 3rem;
+    }
+
+    .forbot-redirect button {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .forbot-redirect img {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .forbot-redirect {
+        left: 94vw;
+        max-width: 3rem;
+        max-height: 3rem;
+    }
+
+    .forbot-redirect button {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .forbot-redirect img {
+        width: 2rem;
+        height: 2rem;
+    }
+}

@@ -170,11 +170,8 @@ article ul li:hover {
 
 @media screen and (min-width: 1020px) {
     main {
-<<<<<<< HEAD
         max-width: 60%;
-=======
         max-width: 80%;
->>>>>>> 6d1f54d7f22388b0cfc4d95334a5b107beba48f1
         padding: 64px 72px;
         margin-bottom: 120px;
     }
