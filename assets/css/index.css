@@ -361,6 +361,7 @@ footer h5>a:hover {
 
     .content {
         width: 75vw;
+        margin: 0px;
     }
 
     .content img {
@@ -397,6 +398,7 @@ footer h5>a:hover {
 
     .content {
         width: 80vw;
+        margin: 0px auto;
     }
 
     .content h2 {
