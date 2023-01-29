@@ -13,7 +13,7 @@ Possui páginas de índice, sobre, contatos e conteúdos relacionados a saúde e
 
 
 ## ⏩Executando
-[Execute o site aqui!](https://formove.netlify.app/web/index.html)
+[Execute o site aqui!](https://formove.netlify.app)
     
 ## ✔️Melhorias
 Integração de frameworks, animações, mais interações e etc.
